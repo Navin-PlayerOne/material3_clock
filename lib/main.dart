@@ -39,9 +39,9 @@ class _MyAppState extends State<MyApp> {
                 ),
           ),
           routes: {
-            '/home': (context) => Home(),
-            '/': (context) => LoadingScreen(),
-            '/location': (context) => Location()
+            '/home': (context) => const Home(),
+            '/': (context) => const LoadingScreen(),
+            '/location': (context) => const Location()
           },
         );
       },

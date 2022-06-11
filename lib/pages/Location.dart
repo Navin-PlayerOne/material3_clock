@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:real_apps/services/world_time.dart';
+import 'package:material3_clock/services/world_time.dart';
 
 class Location extends StatefulWidget {
   const Location({Key? key}) : super(key: key);
@@ -33,7 +33,7 @@ class _LocationState extends State<Location> {
       backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Time"),
+        title: const Text("Time"),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: Center(
@@ -43,7 +43,7 @@ class _LocationState extends State<Location> {
               padding: const EdgeInsets.all(50.0),
               child: Text(
                 '$time',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 50.0,
                 ),
               ),
@@ -55,8 +55,8 @@ class _LocationState extends State<Location> {
                   createWorldTimeObj();
                 });
               },
-              icon: Icon(Icons.refresh),
-              label: Text(
+              icon: const Icon(Icons.refresh),
+              label: const Text(
                 "Refresh Time",
                 style: TextStyle(
                   letterSpacing: 2.0,

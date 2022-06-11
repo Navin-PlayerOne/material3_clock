@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
             Navigator.pushNamed(context, '/location');
           },
           label: const Text("Tap to get Current Time"),
-          icon: Icon(Icons.timer),
+          icon: const Icon(Icons.timer),
         ),
       ),
     );
