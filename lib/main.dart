@@ -1,8 +1,8 @@
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
-import 'package:real_apps/pages/Home.dart';
-import 'package:real_apps/pages/Loading_screen.dart';
-import 'package:real_apps/pages/Location.dart';
+import 'package:material3_clock/pages/Home.dart';
+import 'package:material3_clock/pages/Loading_screen.dart';
+import 'package:material3_clock/pages/Location.dart';
 
 void main() {
   runApp(const MyApp());
