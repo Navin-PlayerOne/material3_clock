@@ -18,14 +18,16 @@ class _HomeState extends State<Home> {
         title: const Text("Home Screen"),
       ),
       body: SingleChildScrollView(
-        child: Center(
-          child: ElevatedButton.icon(
-            onPressed: () {
-              Navigator.pushNamed(context, '/location');
-            },
-            label: const Text("Tap to get Current Time"),
-            icon: const Icon(Icons.timer),
-          ),
+        child: Column(
+          children: [Center(
+            child: ElevatedButton.icon(
+              onPressed: () {
+                Navigator.pushNamed(context, '/location');
+              },
+              label: const Text("Tap to get Current Time"),
+              icon: const Icon(Icons.timer),
+            ),
+          ),]
         ),
       ),
     );
