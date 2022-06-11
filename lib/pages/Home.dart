@@ -17,13 +17,15 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: const Text("Home Screen"),
       ),
-      body: Center(
-        child: ElevatedButton.icon(
-          onPressed: () {
-            Navigator.pushNamed(context, '/location');
-          },
-          label: const Text("Tap to get Current Time"),
-          icon: const Icon(Icons.timer),
+      body: SingleChildScrollView(
+        child: Center(
+          child: ElevatedButton.icon(
+            onPressed: () {
+              Navigator.pushNamed(context, '/location');
+            },
+            label: const Text("Tap to get Current Time"),
+            icon: const Icon(Icons.timer),
+          ),
         ),
       ),
     );

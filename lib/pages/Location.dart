@@ -36,36 +36,38 @@ class _LocationState extends State<Location> {
         title: const Text("Time"),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
-      body: Center(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(50.0),
-              child: Text(
-                '$time',
-                style: const TextStyle(
-                  fontSize: 50.0,
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: Text(
+                  '$time',
+                  style: const TextStyle(
+                    fontSize: 50.0,
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(height: 10.0),
-            ElevatedButton.icon(
-              onPressed: () {
-                setState(() {
-                  createWorldTimeObj();
-                });
-              },
-              icon: const Icon(Icons.refresh),
-              label: const Text(
-                "Refresh Time",
-                style: TextStyle(
-                  letterSpacing: 2.0,
-                  fontWeight: FontWeight.bold,
-                  //color: Colors.grey[200],
+              const SizedBox(height: 10.0),
+              ElevatedButton.icon(
+                onPressed: () {
+                  setState(() {
+                    createWorldTimeObj();
+                  });
+                },
+                icon: const Icon(Icons.refresh),
+                label: const Text(
+                  "Refresh Time",
+                  style: TextStyle(
+                    letterSpacing: 2.0,
+                    fontWeight: FontWeight.bold,
+                    //color: Colors.grey[200],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
